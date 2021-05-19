@@ -1,0 +1,7 @@
+#!/bin/sh
+
+../configure \
+    --prefix=$HOME/Softwares/darwin-gcc-9.3.0 \
+    CC=/usr/local/bin/gcc-9 \
+    CXX=/usr/local/bin/g++-9 \
+    FC=/usr/local/bin/gfortran-9
