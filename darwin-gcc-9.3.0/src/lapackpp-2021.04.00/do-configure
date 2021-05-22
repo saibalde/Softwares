@@ -1,8 +1,0 @@
-#!/bin/sh
-
-cmake \
-    -D CMAKE_BUILD_TYPE=Release \
-    -D CMAKE_CXX_COMPILER=/usr/local/bin/g++-9 \
-    -D CMAKE_INSTALL_PREFIX=$HOME/Softwares/darwin-gcc-9.3.0 \
-    -D blaspp_DIR=$HOME/Softwares/darwin-gcc-9.3.0/lib/blaspp \
-    ..

@@ -4,6 +4,5 @@ cmake \
     -D CMAKE_BUILD_TYPE=Release \
     -D CMAKE_C_COMPILER=/usr/local/bin/gcc-9 \
     -D CMAKE_CXX_COMPILER=/usr/local/bin/g++-9 \
-    -D CMAKE_INSTALL_PREFIX=$HOME/Softwares/darwin-gcc-9.3.0 \
-    -D YAML_CPP_BUILD_TESTS=OFF \
-    ..
+    -D CMAKE_INSTALL_PREFIX=$HOME/Softwares/darwin-gcc-9.3.0/eigen-3.3.9 \
+    ../src

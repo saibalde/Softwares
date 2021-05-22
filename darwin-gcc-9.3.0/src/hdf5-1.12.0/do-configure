@@ -1,9 +1,0 @@
-#!/bin/sh
-
-../configure \
-    --prefix=$HOME/Softwares/darwin-gcc-9.3.0 \
-    --enable-build-mode=production \
-    --enable-parallel \
-    CC=$HOME/Softwares/darwin-gcc-9.3.0/bin/mpicc \
-    FC=$HOME/Softwares/darwin-gcc-9.3.0/bin/mpifort \
-    CXX=$HOME/Softwares/darwin-gcc-9.3.0/bin/mpicxx
