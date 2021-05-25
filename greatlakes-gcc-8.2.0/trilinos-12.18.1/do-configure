@@ -1,0 +1,27 @@
+#!/bin/sh
+
+cmake  \
+    -D CMAKE_BUILD_TYPE=Release \
+    -D CMAKE_INSTALL_PREFIX=$HOME/softwares/greatlakes-gcc-8.2.0/trilinos-12.18.1 \
+    -D TPL_ENABLE_BLAS=ON \
+    -D TPL_BLAS_LIBRARIES=/sw/arcts/centos7/stacks/gcc/8.2.0/OpenBLAS/0.3.9/lib/libopenblas.so \
+    -D TPL_ENABLE_LAPACK=ON \
+    -D TPL_LAPACK_LIBRARIES=/sw/arcts/centos7/stacks/gcc/8.2.0/OpenBLAS/0.3.9/lib/libopenblas.so \
+    -D TPL_ENABLE_MPI=ON \
+    -D MPI_BASE_DIR=/sw/arcts/centos7/stacks/gcc/8.2.0/openmpi/4.0.4 \
+    -D TPL_ENABLE_SuperLU=ON \
+    -D SuperLU_INCLUDE_DIRS=$HOME/softwares/greatlakes-gcc-8.2.0/superlu-5.2.1/include \
+    -D SuperLU_LIBRARY_DIRS=$HOME/softwares/greatlakes-gcc-8.2.0/superlu-5.2.1/lib \
+    -D Trilinos_ENABLE_CXX11=ON \
+    -D Trilinos_ENABLE_Fortran=OFF \
+    -D Trilinos_ENABLE_OpenMP=ON \
+    -D Trilinos_ENABLE_ALL_PACKAGES=OFF \
+    -D Trilinos_ENABLE_ALL_OPTIONAL_PACKAGES=OFF \
+    -D Trilinos_ENABLE_Kokkos=ON \
+    -D Trilinos_ENABLE_Teuchos=ON \
+    -D Trilinos_ENABLE_Tpetra=ON \
+    -D Trilinos_ENABLE_Amesos2=ON \
+    -D Trilinos_ENABLE_Ifpack2=ON \
+    -D Trilinos_ENABLE_Belos=ON \
+    -D Trilinos_ENABLE_Zoltan2=ON \
+    ../src
