@@ -4,7 +4,7 @@ cmake \
     -D CMAKE_BUILD_TYPE=Release \
     -D CMAKE_C_COMPILER=/sw/arcts/centos7/gcc/8.2.0/bin/gcc \
     -D CMAKE_Fortran_COMPILER=/sw/arcts/centos7/gcc/8.2.0/bin/gfortran \
-    -D CMAKE_INSTALL_PREFIX=$HOME/softwares/greatlakes-gcc-8.2.0/superlu-5.2.1 \
+    -D CMAKE_INSTALL_PREFIX=$HOME/Softwares/greatlakes-gcc-8.2.0/superlu-5.2.1 \
     -D enable_blaslib=OFF \
     -D TPL_BLAS_LIBRARIES="/sw/arcts/centos7/stacks/gcc/8.2.0/OpenBLAS/0.3.9/lib/libopenblas.so" \
     ../src

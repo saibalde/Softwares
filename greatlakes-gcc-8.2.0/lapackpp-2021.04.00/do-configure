@@ -3,6 +3,6 @@
 cmake \
     -D CMAKE_BUILD_TYPE=Release \
     -D CMAKE_CXX_COMPILER=/sw/arcts/centos7/gcc/8.2.0/bin/g++ \
-    -D CMAKE_INSTALL_PREFIX=$HOME/softwares/greatlakes-gcc-8.2.0/lapackpp-2021.04.00 \
-    -D blaspp_DIR=$HOME/softwares/greatlakes-gcc-8.2.0/blaspp-2021.04.00/lib64/blaspp \
+    -D CMAKE_INSTALL_PREFIX=$HOME/Softwares/greatlakes-gcc-8.2.0/lapackpp-2021.04.00 \
+    -D blaspp_DIR=$HOME/Softwares/greatlakes-gcc-8.2.0/blaspp-2021.04.00/lib64/blaspp \
     ../src
