@@ -1,7 +1,9 @@
 #!/bin/sh
 
+PREFIX=$HOME/Softwares/darwin-homebrew-gcc-9
+
 ../src/configure \
-    --prefix=$HOME/Softwares/darwin-gcc-9.3.0/openmpi-4.1.1 \
+    --prefix=$PREFIX/openmpi-4.1.1 \
     CC=/usr/local/bin/gcc-9 \
     CXX=/usr/local/bin/g++-9 \
     FC=/usr/local/bin/gfortran-9

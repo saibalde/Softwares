@@ -1,0 +1,11 @@
+#!/bin/sh
+
+PREFIX=$HOME/Softwares/darwin-homebrew-gcc-9
+
+../src/configure \
+    --prefix=$PREFIX/hdf5-1.12.0 \
+    --enable-build-mode=production \
+    --enable-parallel \
+    CC=$PREFIX/openmpi-4.1.1/bin/mpicc \
+    FC=$PREFIX/openmpi-4.1.1/bin/mpifort \
+    CXX=$PREFIX/openmpi-4.1.1/bin/mpicxx

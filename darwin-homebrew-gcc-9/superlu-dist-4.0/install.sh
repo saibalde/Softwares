@@ -9,7 +9,7 @@ make
 cd -
 
 # install prefix
-PREFIX=$HOME/Softwares/darwin-gcc-9.3.0/superlu-dist-4.0
+PREFIX=$HOME/Softwares/darwin-homebrew-gcc-9/superlu-dist-4.0
 
 # install headers
 mkdir -p $PREFIX/include

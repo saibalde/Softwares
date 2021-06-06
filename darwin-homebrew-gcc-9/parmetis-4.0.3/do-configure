@@ -1,0 +1,13 @@
+#!/bin/sh
+
+PREFIX=$HOME/Softwares/darwin-homebrew-gcc-9
+
+cmake \
+    -D CMAKE_BUILD_TYPE=Release \
+    -D CMAKE_C_COMPILER=$PREFIX/openmpi-4.1.1/bin/mpicc \
+    -D CMAKE_CXX_COMPILER=$PREFIX/openmpi-4.1.1/bin/mpicxx \
+    -D CMAKE_INSTALL_PREFIX=$PREFIX/parmetis-4.0.3 \
+    -D METIS_PATH=$PREFIX/parmetis-4.0.3/src/metis \
+    -D GKLIB_PATH=$PREFIX/parmetis-4.0.3/src/metis/GKlib \
+    -D OPENMP=ON \
+    ../src

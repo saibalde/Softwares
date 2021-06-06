@@ -1,9 +1,11 @@
 #!/bin/sh
 
+PREFIX=$HOME/Softwares/darwin-homebrew-gcc-9
+
 cmake \
     -D CMAKE_BUILD_TYPE=Release \
     -D CMAKE_C_COMPILER=/usr/local/bin/gcc-9 \
     -D CMAKE_Fortran_COMPILER=/usr/local/bin/gfortran-9 \
-    -D CMAKE_INSTALL_PREFIX=$HOME/Softwares/darwin-gcc-9.3.0/superlu-5.2.1 \
+    -D CMAKE_INSTALL_PREFIX=$PREFIX/superlu-5.2.1 \
     -D enable_blaslib=OFF \
     ../src

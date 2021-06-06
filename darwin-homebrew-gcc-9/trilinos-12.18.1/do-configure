@@ -1,15 +1,17 @@
 #!/bin/sh
 
+PREFIX=$HOME/Softwares/darwin-homebrew-gcc-9
+
 cmake  \
     -D CMAKE_BUILD_TYPE=Release \
-    -D CMAKE_INSTALL_PREFIX=$HOME/Softwares/darwin-gcc-9.3.0/trilinos-12.18.1 \
+    -D CMAKE_INSTALL_PREFIX=$PREFIX/trilinos-12.18.1 \
     -D TPL_ENABLE_BLAS=ON \
     -D TPL_ENABLE_LAPACK=ON \
     -D TPL_ENABLE_MPI=ON \
-    -D MPI_BASE_DIR=$HOME/Softwares/darwin-gcc-9.3.0/openmpi-4.1.1 \
+    -D MPI_BASE_DIR=$PREFIX/openmpi-4.1.1 \
     -D TPL_ENABLE_SuperLU=ON \
-    -D SuperLU_INCLUDE_DIRS=$HOME/Softwares/darwin-gcc-9.3.0/superlu-5.2.1/include \
-    -D SuperLU_LIBRARY_DIRS=$HOME/Softwares/darwin-gcc-9.3.0/superlu-5.2.1/lib \
+    -D SuperLU_INCLUDE_DIRS=$PREFIX/superlu-5.2.1/include \
+    -D SuperLU_LIBRARY_DIRS=$PREFIX/superlu-5.2.1/lib \
     -D Trilinos_ENABLE_CXX11=ON \
     -D Trilinos_ENABLE_Fortran=OFF \
     -D Trilinos_ENABLE_OpenMP=ON \

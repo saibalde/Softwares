@@ -1,9 +1,0 @@
-#!/bin/sh
-
-../src/configure \
-    --prefix=$HOME/Softwares/darwin-gcc-9.3.0/hdf5-1.12.0 \
-    --enable-build-mode=production \
-    --enable-parallel \
-    CC=$HOME/Softwares/darwin-gcc-9.3.0/openmpi-4.1.1/bin/mpicc \
-    FC=$HOME/Softwares/darwin-gcc-9.3.0/openmpi-4.1.1/bin/mpifort \
-    CXX=$HOME/Softwares/darwin-gcc-9.3.0/openmpi-4.1.1/bin/mpicxx
