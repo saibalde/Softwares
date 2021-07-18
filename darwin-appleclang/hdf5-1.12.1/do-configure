@@ -1,0 +1,9 @@
+#!/bin/sh
+
+PREFIX=$HOME/Softwares/darwin-appleclang
+
+../src/configure \
+    --prefix=$PREFIX/hdf5-1.12.1 \
+    --enable-build-mode=production \
+    CC=/usr/bin/clang \
+    CXX=/usr/bin/clang++
