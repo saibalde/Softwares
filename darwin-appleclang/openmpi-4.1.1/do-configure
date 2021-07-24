@@ -1,0 +1,8 @@
+#!/bin/sh
+
+PREFIX=$HOME/Softwares/darwin-appleclang
+
+../src/configure \
+    --prefix=$PREFIX/openmpi-4.1.1 \
+    CC=/usr/bin/clang \
+    CXX=/usr/bin/clang++

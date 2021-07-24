@@ -1,0 +1,11 @@
+#!/bin/sh
+
+PREFIX=$HOME/Softwares/darwin-appleclang
+
+cmake \
+    -D CMAKE_BUILD_TYPE=Release \
+    -D CMAKE_C_COMPILER=/usr/bin/clang \
+    -D CMAKE_CXX_COMPILER=/usr/bin/clang++ \
+    -D CMAKE_INSTALL_PREFIX=$PREFIX/msgpack-c-cpp-3.3.0 \
+    -D MSGPACK_CXX11=ON \
+    ../src
