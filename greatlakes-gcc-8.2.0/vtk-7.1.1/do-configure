@@ -1,0 +1,10 @@
+#!/bin/sh
+
+cmake \
+    -D CMAKE_BUILD_TYPE=Release \
+    -D CMAKE_C_COMPILER=/sw/arcts/centos7/gcc/8.2.0/bin/gcc \
+    -D CMAKE_CXX_COMPILER=/sw/arcts/centos7/gcc/8.2.0/bin/g++ \
+    -D CMAKE_INSTALL_PREFIX=$HOME/Softwares/greatlakes-gcc-8.2.0/vtk-7.1.1 \
+    -D VTK_Group_Rendering=OFF \
+    -D VTK_PYTHON_VERSION=3 \
+    ../src
