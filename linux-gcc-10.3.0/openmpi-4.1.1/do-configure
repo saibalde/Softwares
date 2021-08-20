@@ -1,0 +1,8 @@
+#!/bin/sh
+
+../src/configure \
+    --disable-static \
+    --enable-shared \
+    CC=/usr/bin/gcc \
+    CXX=/usr/bin/g++ \
+    FC=/usr/bin/gfortran

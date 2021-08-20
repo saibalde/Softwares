@@ -1,0 +1,7 @@
+#!/bin/sh
+
+../src/configure \
+    --enable-build-mode=production \
+    CC=/usr/bin/gcc \
+    CXX=/usr/bin/g++ \
+    FC=/usr/bin/gfortran
